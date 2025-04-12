@@ -38,61 +38,68 @@ Aadhara is a full-stack application that extracts structured details from Aadhaa
 ---
 
 ## 📁 Project Structure
-
-```plaintext
 aadhaara/
-├── .env                           # Environment variables (for API keys, etc.)
-├── .gitignore                     # Git ignore file
-├── eslint.config.js                # ESLint configuration
-├── index.html                      # Main HTML file for the frontend
-├── package-lock.json               # Locks versions of dependencies
-├── package.json                    # Project dependencies and scripts
-├── postcss.config.js               # PostCSS configuration for Tailwind CSS
-├── public/                         # Public assets and files
-│   └── vite.svg                    # Vite logo
-├── README.md                       # Project documentation
-├── src/                            # Frontend source code
-│   ├── api/                        # API-related code
-│   │   └── upload/                 # Upload API services and types
-│   │       ├── upload.api.ts       # API logic for uploading images
-│   │       └── upload.types.ts     # Type definitions for upload
-│   ├── App.tsx                     # Main App component
-│   ├── assets/                     # Static assets (images, etc.)
-│   │   ├── adhar-demo-avathar.jpg  # Aadhaar demo avatar image
-│   │   └── react.svg               # React logo
-│   ├── components/                 # Reusable components
-│   │   ├── animatedAadharCard/     # Animated Aadhaar card components
-│   │   │   ├── AadhaarBackCard.tsx # Aadhaar back card component
-│   │   │   └── AadhaarFrontCard.tsx # Aadhaar front card component
-│   │   ├── demoCard/               # Demo Aadhaar card component
-│   │   │   └── DemoAdhar.tsx       # Demo card for showing Aadhaar
-│   │   ├── ImageUploader/          # Image uploader component
-│   │   │   └── ImageUploader.tsx   # Upload image functionality
-│   │   ├── navbar/                 # Navbar component
-│   │   │   └── Navbar.tsx          # Navbar component
-│   │   └── ui/                     # UI elements like buttons and cards
-│   │       ├── buttons/            # Button components
-│   │       │   └── PrimaryButton.tsx # Primary button component
-│   │       └── cards/              # Card components
-│   │           └── FeatureCard.tsx  # Feature card component
-│   ├── index.css                   # Global styles
-│   ├── main.tsx                    # Entry point for React app
-│   ├── pages/                      # Page components
-│   │   └── HomeScreen.tsx          # Home screen component
-│   ├── utils/                      # Utility functions
-│   │   └── downloadCardAsImage.ts  # Function to download the card as an image
-│   └── vite-env.d.ts               # TypeScript types for Vite
-├── tailwind.config.js              # Tailwind CSS configuration
-├── tsconfig.app.json              # TypeScript configuration for the app
-├── tsconfig.json                  # Global TypeScript configuration
-├── tsconfig.node.json             # TypeScript configuration for Node.js
-└── vite.config.ts                 # Vite configuration for bundling
+├── .env # Environment variables
+├── .gitignore # Git ignore file
+├── eslint.config.js # ESLint configuration
+├── index.html # Main HTML file
+├── package-lock.json # Lock file
+├── package.json # Project dependencies
+├── postcss.config.js # PostCSS configuration
+├── public/ # Public assets
+│ └── vite.svg # Vite logo
+├── README.md # Project documentation
+├── src/ # Frontend source
+│ ├── api/ # API-related code
+│ │ └── upload/ # Upload API
+│ │ ├── upload.api.ts # API logic
+│ │ └── upload.types.ts # Type definitions
+│ ├── App.tsx # Main App component
+│ ├── assets/ # Static assets
+│ │ ├── adhar-demo-avathar.jpg # Demo image
+│ │ └── react.svg # React logo
+│ ├── components/ # Reusable components
+│ │ ├── animatedAadharCard/ # Aadhaar card components
+│ │ │ ├── AadhaarBackCard.tsx
+│ │ │ └── AadhaarFrontCard.tsx
+│ │ ├── demoCard/ # Demo card
+│ │ │ └── DemoAdhar.tsx
+│ │ ├── ImageUploader/ # Image uploader
+│ │ │ └── ImageUploader.tsx
+│ │ ├── navbar/ # Navbar
+│ │ │ └── Navbar.tsx
+│ │ └── ui/ # UI elements
+│ │ ├── buttons/ # Buttons
+│ │ │ └── PrimaryButton.tsx
+│ │ └── cards/ # Cards
+│ │ └── FeatureCard.tsx
+│ ├── index.css # Global styles
+│ ├── main.tsx # React entry point
+│ ├── pages/ # Pages
+│ │ └── HomeScreen.tsx # Home screen
+│ ├── utils/ # Utilities
+│ │ └── downloadCardAsImage.ts # Download function
+│ └── vite-env.d.ts # Vite types
+├── tailwind.config.js # Tailwind config
+├── tsconfig.app.json # TS app config
+├── tsconfig.json # Global TS config
+├── tsconfig.node.json # TS Node config
+└── vite.config.ts # Vite config
 
 
-🧪 Getting Started
-1. Clone the repository
 
-git clone https://github.com/aswanthchandran0/aadhara-frontend.git
-cd aadhara
-npm install
-npm run dev
+## 🧪 Getting Started
+
+### Prerequisites
+- Node.js (v16 or higher)
+- npm (v8 or higher)
+- Git
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/aswanthchandran0/aadhara-frontend.git
+   cd aadhara-frontend
+   npm install
+   npm run dev
